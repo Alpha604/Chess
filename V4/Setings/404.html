@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot d'échecs indisponible</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff4c4c;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #d1d1d1;
+            margin-bottom: 2rem;
+        }
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #3b3b5e;
+            color: #f5f5f5;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff4c4c;
+            color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+    <div class="icon">❌</div>
+    <h1>404 Not found</h1>
+    <p>La page que vous cherchez est actuellement indisponible. <br>
+    Les fichier externes ne s'ouvre pas dans "files://" ou alors ils sont mal répertorié dans "bots/manifest.json" !</p>
+    <div>
+        <button onclick="window.location.href='../bots.html'">🏠 Accueil</button>
+        <button onclick="location.reload()">💿 Réessayer</button>
+    </div>
+    <script src="loader.js"></script>
+</body>
+</html>
