@@ -1,0 +1,20 @@
+{
+    "Martin": {
+        "won": 10,
+        "draw": 4,
+        "lost": 2,
+        "elo": 250
+    },
+    "Alice": {
+        "won": 8,
+        "draw": 5,
+        "lost": 3,
+        "elo": 1400
+    },
+    "Bob": {
+        "won": 12,
+        "draw": 2,
+        "lost": 4,
+        "elo": 1550
+    }
+}
