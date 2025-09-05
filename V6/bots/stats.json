@@ -1,8 +1,8 @@
 {
     "Martin": {
-        "won": 100,
+        "won": 2,
         "draw": 4,
-        "lost": 2,
+        "lost": 10,
         "elo": 1500,
         "lastGame": "1. e4 e5\n2. Nf3 Nc6\n3. Bb5 a6\n4. Ba4 Nf6"
     },
@@ -21,4 +21,5 @@
         "lastGame": "1. e4 c5\n2. Nf3 d6\n3. d4 cxd4\n4. Nxd4 Nf6"
     }
 }
+
 
