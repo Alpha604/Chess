@@ -1,0 +1,23 @@
+{
+    "Martin": {
+        "won": 10,
+        "draw": 4,
+        "lost": 2,
+        "elo": 1500,
+        "lastGame": "1. e4 e5\n2. Nf3 Nc6\n3. Bb5 a6\n4. Ba4 Nf6"
+    },
+    "Alice": {
+        "won": 8,
+        "draw": 5,
+        "lost": 3,
+        "elo": 1400,
+        "lastGame": "1. d4 d5\n2. c4 c6\n3. Nc3 Nf6\n4. Nf3 e6"
+    },
+    "Bob": {
+        "won": 12,
+        "draw": 2,
+        "lost": 4,
+        "elo": 1550,
+        "lastGame": "1. e4 c5\n2. Nf3 d6\n3. d4 cxd4\n4. Nxd4 Nf6"
+    }
+}
