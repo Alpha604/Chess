@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Bot</title>
+    <link rel="stylesheet" href="../Setings/bots-info/page-bot.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader-container"></div>
+
+    <!-- Page Bot -->
+    <div id="bot-page" class="hidden">
+
+        <header>
+            <div class="back" onclick="history.back()">←</div>
+            <img id="bot-img" src="https://images.chesscomfiles.com/uploads/v1/bot_personality/a6e19caa-8a5a-11ea-b74e-55003725fb61.6cfa3204.384x384o.6ed7394700f6.png" alt="Bot">
+            <div class="info">
+                <h2 id="bot-name">Martin</h2>
+                <p id="bot-elo">Undefined</p>
+            </div>
+        </header>
+
+        <main>
+            <button class="btn-play" onclick="playBot()">Jouer contre le bot</button>
+
+            <div class="chart-container">
+                <h3>Statistiques</h3>
+                <div class="bar-chart">
+                    <div id="lost" class="bar red">0</div>
+                    <div id="draw" class="bar gray">0</div>
+                    <div id="won" class="bar green">0</div>
+                </div>
+            </div>
+            <div class="part">
+                <ul>
+                    <li id="number-won">Undefined</li>
+                    <li id="number-draw">Undefined</li>
+                    <li id="number-lost">Undefined</li>
+                </ul>
+            </div>
+            <h3>Dernière Partie</h3>
+            <iframe id="13814536" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13814536"></iframe><script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13814536"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
+        </main>
+    </div>
+
+    <script src="../../Setings/loader2.js"></script>
+    <script src="martin.js"></script>
+</body>
+</html>
