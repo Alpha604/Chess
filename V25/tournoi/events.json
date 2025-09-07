@@ -1,17 +1,53 @@
-{
+// ----------------------------
+// Données des événements
+// ----------------------------
+const data = {
   "GrandSwiss": {
     "Dimanche": [
-      { "start": "16:57", "end": "16:59", "message": "GrandSwiss commence ! 🎉" }
-    ],
-    "Mardi": [
-      { "start": "19:20", "end": "21:00", "message": "GrandSwiss reprend mardi soir !" }
+      { "start": "16:15", "end": "16:20", "message": "GrandSwiss commence maintenant ! 🎉" }
     ]
   },
   "Tournoi2": {
-    "Lundi": [
-      { "start": "19:00", "end": "20:30", "message": "Tournoi 2 : préparez-vous 🏆" }
+    "Dimanche": [
+      { "start": "16:16", "end": "16:21", "message": "Tournoi 2 : préparez-vous 🏆" }
     ]
   }
+};
+
+// ----------------------------
+// Fonction pour convertir HH:MM en minutes depuis minuit
+// ----------------------------
+function timeToMinutes(timeStr) {
+  const [h, m] = timeStr.split(':').map(Number);
+  return h * 60 + m;
 }
 
+// ----------------------------
+// Vérification des événements
+// ----------------------------
+function checkEvents() {
+  const now = new Date();
+  const days = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+  const today = days[now.getDay()]; // jour actuel
 
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+  let messages = [];
+
+  for (let event in data) {
+    if (data[event][today]) {
+      data[event][today].forEach(item => {
+        const startMinutes = timeToMinutes(item.start);
+        const endMinutes = timeToMinutes(item.end);
+        if (currentMinutes >= startMinutes && currentMinutes <= endMinutes) {
+          messages.push(item.message);
+        }
+      });
+    }
+  }
+
+  const messageDiv = document.getElementById("message");
+  messageDiv.innerHTML = messages.join('<br>') || '';
+
+  // Affichage debug : heure actuelle
+  con

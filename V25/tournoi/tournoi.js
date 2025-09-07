@@ -1,52 +1,60 @@
-// Charger le fichier JSON
-fetch('events.json')
-  .then(response => response.json())
-  .then(data => {
+// ----------------------------
+// Données des événements
+// ----------------------------
+const data = {
+  "GrandSwiss": {
+    "Dimanche": [
+      { "start": "17:05", "end": "17:06", "message": "GrandSwiss commence maintenant ! 🎉" }
+    ]
+  },
+  "Tournoi2": {
+    "Dimanche": [
+      { "start": "16:16", "end": "16:21", "message": "Tournoi 2 : préparez-vous 🏆" }
+    ]
+  }
+};
 
-    // --- MODIFIER ICI POUR TEST ---
-    // format "HH:MM" pour simuler l'heure
-    let simulatedTime = null; // ex: "18:30" ou null pour utiliser l'heure réelle
+// ----------------------------
+// Fonction pour convertir HH:MM en minutes depuis minuit
+// ----------------------------
+function timeToMinutes(timeStr) {
+  const [h, m] = timeStr.split(':').map(Number);
+  return h * 60 + m;
+}
 
-    function checkEvents() {
-      const now = new Date();
-      const days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
-      const today = days[now.getDay()];
+// ----------------------------
+// Vérification des événements
+// ----------------------------
+function checkEvents() {
+  const now = new Date();
+  const days = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+  const today = days[now.getDay()]; // jour actuel
 
-      const hour = now.getHours().toString().padStart(2,'0');
-      const minute = now.getMinutes().toString().padStart(2,'0');
-      const second = now.getSeconds().toString().padStart(2,'0');
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
-      // Si on simule, utiliser simulatedTime, sinon heure réelle
-      const currentTime = simulatedTime ? simulatedTime : `${hour}:${minute}`;
+  let messages = [];
 
-      // Afficher l'heure actuelle pour debug
-      const timeDiv = document.getElementById("current-time");
-      if(timeDiv) {
-        timeDiv.textContent = simulatedTime ? simulatedTime + " (simulée)" : `${hour}:${minute}:${second}`;
-      }
-
-      let messages = [];
-
-      for (let event in data) {
-        if (data[event][today]) {
-          data[event][today].forEach(item => {
-            if (currentTime >= item.start && currentTime <= item.end) {
-              messages.push(item.message);
-            }
-          });
+  for (let event in data) {
+    if (data[event][today]) {
+      data[event][today].forEach(item => {
+        const startMinutes = timeToMinutes(item.start);
+        const endMinutes = timeToMinutes(item.end);
+        if (currentMinutes >= startMinutes && currentMinutes <= endMinutes) {
+          messages.push(item.message);
         }
-      }
-
-      const messageDiv = document.getElementById("message");
-      if (messages.length > 0) {
-        messageDiv.innerHTML = messages.join('<br>');
-      } else {
-        messageDiv.innerHTML = '';
-      }
-
-      console.log(`Vérification à ${currentTime}, messages:`, messages);
+      });
     }
+  }
 
-    setInterval(checkEvents, 1000);
-  })
-  .catch(err => console.error("Erreur lors du chargement du JSON :", err));
+  const messageDiv = document.getElementById("message");
+  messageDiv.innerHTML = messages.join('<br>') || '';
+
+  // Affichage debug : heure actuelle
+  const timeDiv = document.getElementById("current-time");
+  if(timeDiv) timeDiv.textContent = `${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
+}
+
+// ----------------------------
+// Lancer la vérification toutes les secondes
+// ----------------------------
+setInterval(checkEvents, 1000);
