@@ -23,19 +23,73 @@
     "url": "pages/worldopen.html",
     "locked": true
   },
-  "Tata Steel Chess": {
+  "Tata St Chess": {
     "title": "Tata Steel Chess",
     "image": "https://images.chesscomfiles.com/uploads/v1/news/1587909.983aefa8.5000x5000o.0474379e1dc5.png",
     "url": "pages/tournoi2.html",
     "locked": true
   },
-  "Norway Chess": {
+  "Nr Chess": {
     "title": "Norway Chess",
     "image": "https://images.chesscomfiles.com/uploads/v1/news/1677802.1784f795.5000x5000o.794af4910288.png",
     "url": "pages/championscup.html",
     "locked": true
   },
-  "Sinquefield Cup": {
+  "Si Cup": {
+    "title": "Sinquefield Cup",
+    "image": "https://saintlouischessclub.org/wp-content/uploads/2025/02/2025-Sinquefield-Cup-web-graphic.webp",
+    "url": "pages/worldopen.html",
+    "locked": true
+  },
+  "Tat St Chess": {
+    "title": "Tata Steel Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1587909.983aefa8.5000x5000o.0474379e1dc5.png",
+    "url": "pages/tournoi2.html",
+    "locked": true
+  },
+  "No Chess": {
+    "title": "Norway Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1677802.1784f795.5000x5000o.794af4910288.png",
+    "url": "pages/championscup.html",
+    "locked": true
+  },
+  "S Cup": {
+    "title": "Sinquefield Cup",
+    "image": "https://saintlouischessclub.org/wp-content/uploads/2025/02/2025-Sinquefield-Cup-web-graphic.webp",
+    "url": "pages/worldopen.html",
+    "locked": true
+  },
+  "Ta St Chess": {
+    "title": "Tata Steel Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1587909.983aefa8.5000x5000o.0474379e1dc5.png",
+    "url": "pages/tournoi2.html",
+    "locked": true
+  },
+  "NorChess": {
+    "title": "Norway Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1677802.1784f795.5000x5000o.794af4910288.png",
+    "url": "pages/championscup.html",
+    "locked": true
+  },
+  "Sin p": {
+    "title": "Sinquefield Cup",
+    "image": "https://saintlouischessclub.org/wp-content/uploads/2025/02/2025-Sinquefield-Cup-web-graphic.webp",
+    "url": "pages/worldopen.html",
+    "locked": true
+  },
+  "Tata S Chess": {
+    "title": "Tata Steel Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1587909.983aefa8.5000x5000o.0474379e1dc5.png",
+    "url": "pages/tournoi2.html",
+    "locked": true
+  },
+  "Nor Chess": {
+    "title": "Norway Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1677802.1784f795.5000x5000o.794af4910288.png",
+    "url": "pages/championscup.html",
+    "locked": true
+  },
+  "Sin Cup": {
     "title": "Sinquefield Cup",
     "image": "https://saintlouischessclub.org/wp-content/uploads/2025/02/2025-Sinquefield-Cup-web-graphic.webp",
     "url": "pages/worldopen.html",
