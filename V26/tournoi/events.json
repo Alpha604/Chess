@@ -1,0 +1,25 @@
+{
+  "GrandSwiss": {
+    "title": "Grand Swiss",
+    "image": "https://gamelevate.com/wp-content/uploads/2025/09/FideGrandSwiss-1160x653.jpg",
+    "Lundi": [
+      { "start": "18:20", "end": "18:23", "message": "GrandSwiss LIVE" }
+    ]
+  },
+  "Tournoi2": {
+    "title": "Tournoi 2",
+    "image": "https://www.francetvpro.fr/sites/default/files/styles/crop_format_bandeau/public/telechargements/images/Sport6nations_header-Calendrier_New_1.jpg?h=a78000c5&itok=CgVVG3am",
+    "Mardi": [
+      { "start": "19:00", "end": "20:30", "message": "Tournoi2 LIVE" }
+    ]
+  },
+  "ChampionsCup": {
+    "title": "Champions Cup",
+    "image": "https://www.francetvpro.fr/sites/default/files/styles/crop_format_bandeau/public/telechargements/images/Sport6nations_header-Calendrier_New_1.jpg?h=a78000c5&itok=CgVVG3am",
+    "alwaysLive": true
+  },
+  "WorldOpen": {
+    "title": "World Open",
+    "image": "https://gamelevate.com/wp-content/uploads/2025/09/FideGrandSwiss-1160x653.jpg"
+  }
+}
