@@ -1,0 +1,22 @@
+{
+  "GrandSwiss": {
+    "Dimanche": [
+      { "start": "17:30", "end": "17:32", "message": "GrandSwiss LIVE" }
+    ]
+  },
+  "Tournoi2": {
+    "Dimanche": [
+      { "start": "17:31", "end": "17:42", "message": "Tournoi2 LIVE" }
+    ]
+  },
+  "ChampionsCup": {
+    "Dimanche": [
+      { "start": "17:38", "end": "17:49", "message": "Champions Cup LIVE" }
+    ]
+  },
+  "WorldOpen": {
+    "Jeudi": [
+      { "start": "16:00", "end": "18:00", "message": "World Open LIVE" }
+    ]
+  }
+}

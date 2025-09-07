@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
+#tournaments-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tournament-card {
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.tournament-card:hover {
+  transform: scale(1.05);
+}
+
+.tournament-card h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.tournament-card .live-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  display: none;
+}
+
+.tournament-card .live-badge.show {
+  display: block;
+}
