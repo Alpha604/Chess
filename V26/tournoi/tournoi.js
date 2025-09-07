@@ -4,7 +4,7 @@ fetch('events.json')
 
     const container = document.getElementById("tournaments-container");
 
-    // Créer les cartes avec image + titre
+    // Créer les cartes avec image + titre + clic vers page
     for (let key in data) {
       const tournament = data[key];
 
@@ -12,6 +12,13 @@ fetch('events.json')
       card.className = 'tournament-card';
       card.id = `card-${key}`;
       card.style.backgroundImage = `url(${tournament.image})`;
+
+      // Quand on clique, ouvre la page du tournoi
+      if (tournament.url) {
+        card.addEventListener('click', () => {
+          window.location.href = tournament.url;
+        });
+      }
 
       const title = document.createElement('h2');
       title.textContent = tournament.title || key;
