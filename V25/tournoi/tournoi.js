@@ -17,7 +17,7 @@ fetch('events.json')
 
       const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
-      let messages = [];
+      let messages = ["💗Live !"];
 
       for (let event in data) {
         if (data[event][today]) {
@@ -42,3 +42,4 @@ fetch('events.json')
     setInterval(checkEvents, 1000);
   })
   .catch(err => console.error("Erreur JSON :", err));
+
