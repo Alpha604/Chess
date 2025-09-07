@@ -1,7 +1,7 @@
 {
   "GrandSwiss": {
     "Dimanche": [
-      { "start": "17:10", "end": "17:11", "message": "GrandSwiss commence maintenant ! 🎉" }
+      { "start": "17:16", "end": "17:18", "message": "GrandSwiss commence maintenant ! 🎉" }
     ],
     "Lundi": [
       { "start": "18:30", "end": "20:00", "message": "GrandSwiss lundi soir ! 🚀" }
@@ -16,3 +16,4 @@
     ]
   }
 }
+
