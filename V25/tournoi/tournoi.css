@@ -35,4 +35,5 @@ nav a:hover {
   font-size: 1.8em;
   color: rgb(229, 255, 0);
   margin-top: 20px;
+  display: block;
 }
