@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robots — Échecs</title>
+  <link rel="stylesheet" href="bots.css">
+</head>
+<body>
+  <header>🤖 Robots</header>
+  <nav>
+    <a href="index.html">🏠 Accueil</a>
+    <a href="problemes.html">📘 Problèmes</a>
+    <a href="stats.html">📈 Stats</a>
+    <a href="tournoi/tournoi.html">🏆 Tournoi</a>
+  </nav>
+
+  <div class="section">
+    <h2>Robots</h2>
+
+    <!-- Event -->
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>🎉 Evenemment</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="evenemment">Aucun pour le momment</div>
+      </div>
+    </div>
+
+    <!-- Débutant -->
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>♙ Débutant</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="debutant"></div>
+      </div>
+    </div>
+
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>♗ Intermediaire</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="intermediaire"></div>
+      </div>
+    </div>
+
+    <!-- Avancé -->
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>♖ Avancé</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="avance"></div>
+      </div>
+    </div>
+
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>♕ Maitre</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="maitre"></div>
+      </div>
+    </div>
+
+    <!-- Adaptatif -->
+    <div class="category collapsed">
+      <div class="category-header">
+        <span>♔ Adaptatif</span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="category-content">
+        <div class="grid" id="adaptatif"></div>
+      </div>
+    </div>
+  </div>
+  <script src="bots.js"></script>
+  <script src="script.js"></script>
+  <script src="Setings/loader.js"></script>
+  <script src="Setings/footer.js"></script>
+  <script src="Setings/locked-emoji.js"></script>
+</body>
+</html>
