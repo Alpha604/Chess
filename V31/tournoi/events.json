@@ -1,0 +1,33 @@
+{
+  "Grand Swiss": {
+    "title": "Grand Swiss",
+    "image": "https://gamelevate.com/wp-content/uploads/2025/09/FideGrandSwiss-1536x864.jpg",
+    "url": "pages/grandswiss.html",
+    "locked": true,
+    "alwaysLive": true
+  },
+  "Tata Steel Chess": {
+    "title": "Tata Steel Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1587909.983aefa8.5000x5000o.0474379e1dc5.png",
+    "url": "pages/tournoi2.html",
+    "locked": true
+  },
+  "Norway Chess": {
+    "title": "Norway Chess",
+    "image": "https://images.chesscomfiles.com/uploads/v1/news/1677802.1784f795.5000x5000o.794af4910288.png",
+    "url": "pages/championscup.html",
+    "locked": true
+  },
+  "Sinquefield Cup": {
+    "title": "Sinquefield Cup",
+    "image": "https://saintlouischessclub.org/wp-content/uploads/2025/02/2025-Sinquefield-Cup-web-graphic.webp",
+    "url": "pages/worldopen.html",
+    "locked": true
+  },
+  "Tilted Tuesday": {
+    "title": "Tilted Tuesday",
+    "image": "https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/ChesscomEmeric/php9fn4eZ.png",
+    "url": "pages/worldopen.html",
+    "locked": true
+  }
+}
