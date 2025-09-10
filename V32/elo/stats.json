@@ -1,0 +1,7 @@
+{
+  "Bot250": { "won": 7, "draw": 1, "lost": 0, "elo": 250, "country": "https://flagsapi.com/BG/flat/64.png", "lastGame": "13817642" },
+  "Bot400": { "won": 9, "draw": 1, "lost": 1, "elo": 400, "country": "https://flagsapi.com/GR/flat/64.png", "lastGame": "13817643" },
+  "Bot600": { "won": 7, "draw": 0, "lost": 0, "elo": 600, "country": "https://flagsapi.com/US/flat/64.png", "lastGame": "13817644" },
+  "Bot700": { "won": 7, "draw": 1, "lost": 3, "elo": 700, "country": "https://flagsapi.com/LR/flat/64.png", "lastGame": "13817645" },
+  "Bot1000": { "won": 9, "draw": 3, "lost": 4, "elo": 1000, "country": "https://flagsapi.com/MX/flat/64.png", "lastGame": "13817646" }
+}
