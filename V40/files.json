@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "Documents",
+      "type": "folder",
+      "children": [
+        { "name": "CV.txt", "type": "file", "content": "Mon CV\nNom: John Doe\nExpérience: 5 ans" },
+        { "name": "Projet", "type": "folder", "children": [
+            { "name": "brief.txt", "type": "file", "content": "Brief du projet..." }
+        ]}
+      ]
+    },
+    {
+      "name": "Images",
+      "type": "folder",
+      "children": [
+        { "name": "vacances.html", "type": "file", "url": "https://www.chess.com/emboard?id=13847611" }
+      ]
+    },
+    { "name": "notes.txt", "type": "file", "content": "Mes notes de cours..." }
+  ]
+}
