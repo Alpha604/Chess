@@ -1,0 +1,12 @@
+[
+  { "name": "Documents", "type": "folder", "children": [
+      { "name": "CV.pdf", "type": "file", "url": "https://www.chess.com/emboard?id=13847525" },
+      { "name": "Projet", "type": "folder", "children": [
+          { "name": "brief.txt", "type": "file", "url": "https://www.chess.com/emboard?id=13847611" }
+      ] }
+  ] },
+  { "name": "Images", "type": "folder", "children": [
+      { "name": "vacances.jpg", "type": "file", "url": "https://www.chess.com/emboard?id=13847612" }
+  ] },
+  { "name": "notes.txt", "type": "file", "url": "https://www.chess.com/emboard?id=13847613" }
+]

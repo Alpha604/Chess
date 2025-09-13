@@ -1,0 +1,23 @@
+body { font-family: Arial, sans-serif; background:#0b1020; color:#e5eaf5; margin:0; }
+header { text-align:center; padding:1rem; font-size:1.8rem; font-weight:bold; color:#60a5fa; }
+nav { background:#151c2c; padding:1rem; text-align:center; }
+nav a { color:#e5eaf5; margin:0 1rem; text-decoration:none; font-weight:bold; }
+nav a:hover { color:#60a5fa; }
+.section { max-width:1200px; margin:2rem auto; padding:1rem; }
+
+.explorer-container { width:100%; box-sizing:border-box; font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif; color:#e6eef8; }
+
+.explorer__grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(140px,1fr)); gap:12px; padding:12px; background: linear-gradient(180deg,#071026,#041025); border-radius:12px; min-height:400px; }
+.explorer__tile { background: #0b112a; padding:12px; border-radius:10px; cursor:pointer; text-align:center; color:#e6eef8; transition: transform .15s; }
+.explorer__tile:hover { background:#16204b; transform: translateY(-4px); }
+
+.explorer__empty { text-align:center; color:#9aa7bd; padding:30px; }
+
+#breadcrumb { color:#9aa7bd; margin:8px 0; font-size:14px; }
+#breadcrumb span { cursor:pointer; }
+
+.popup { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:1000; }
+#popupBody { background:#071026; width:90%; height:90%; border-radius:12px; display:flex; flex-direction:column; }
+.popup-header { display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:rgba(59,130,246,0.1); color:white; font-weight:600; border-radius:12px 12px 0 0; }
+.popup-close { cursor:pointer; border:none; background:none; font-size:20px; color:white; }
+iframe { flex:1; width:100%; border:none; border-radius:0 0 12px 12px; }
