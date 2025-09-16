@@ -1,0 +1,1 @@
+window.location.href = "Setings/not-ready.html";

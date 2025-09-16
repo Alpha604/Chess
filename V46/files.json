@@ -1,0 +1,37 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "Documents",
+      "type": "folder",
+      "children": [
+        { "name": "CV.txt", "type": "file", "content": "Mon CV\nNom: John Doe\nExpérience: 5 ans" },
+        { "name": "Projet", "type": "folder", "children": [
+            { "name": "brief.txt", "type": "file", "content": "Brief du projet..." }
+        ]},
+        { "name": "Problèmes", "type": "folder", "children": [
+            { "name": "Problèmes du jour", "type": "folder", "children": [
+                { "name": "2025", "type": "folder", "children": [
+                    { "name": "Septembre", "type": "folder", "children": [
+                      { "name": "notes.txt", "type": "file", "content": "Les " }
+                      ] },
+                    { "name": "Octobre", "type": "folder", "children": [] },
+                    { "name": "Novembre", "type": "folder", "children": [] },
+                    { "name": "Décembre", "type": "folder", "children": [] }
+                ]}
+            ]}
+        ]}
+      ]
+    },
+    {
+      "name": "Images",
+      "type": "folder",
+      "children": [
+        { "name": "vacances.html", "type": "file", "url": "https://www.chess.com/emboard?id=13847611" },
+        { "name": "images.html", "type": "file", "url": "https://jooinn.com/images/lonely-tree-reflection-3.jpg" }
+      ]
+    },
+    { "name": "notes.txt", "type": "file", "content": "Mes notes de cours..." }
+  ]
+}
